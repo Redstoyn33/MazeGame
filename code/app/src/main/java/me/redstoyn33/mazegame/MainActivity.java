@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.FrameLayout;
+import android.widget.ListView;
 import android.widget.TableRow;
 import android.widget.Toast;
 
@@ -60,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
             game.start(new Map(Objects.requireNonNull(input.getText()).toString()));
             if (getCurrentFocus()!=null)
             imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+        });
+        ((ListView)findViewById(R.id.levels)).setOnItemClickListener((parent, view, position, id) -> {
+            game.start(new Map(getResources().getStringArray(R.array.levels)[position]));
         });
         root.setOnTouchListener((v, event) -> {
             if (event.getAction() == MotionEvent.ACTION_UP) {

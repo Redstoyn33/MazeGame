@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="levelsName">
+        <item>0</item>
+        <item>коридор</item>
+        <item>пример</item>
+    </string-array>
+    <string-array name="levels">
+        <item tools:ignore="TypographyDashes">4=4\n+--|\n|..|\n|..|\n---.\ns=1=1\ne=2=2</item>
+        <item tools:ignore="TypographyDashes">10=2\n+--------|\n---------.\ns=0=0\ne=8=0</item>
+        <item tools:ignore="TypographyDashes">10=7\n++-------|\n|-.-+--.||\n|+|+||++||\n||+-.|||||\n|--+-.|..|\n|--------|\n---------.\ns=0=0\ne=2=3</item>
+    </string-array>
+</resources>
