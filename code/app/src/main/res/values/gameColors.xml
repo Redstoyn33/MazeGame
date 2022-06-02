@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wall">#6c6c6a</color>
+    <color name="floor">#898989</color>
+</resources>
